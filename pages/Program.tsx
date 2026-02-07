@@ -228,7 +228,7 @@ const Program: React.FC = () => {
             <Info className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
             <p className="text-xs text-blue-700 leading-relaxed">
                 ※ 위 가격은 2026년 보건복지부 고시 기준이며, 바우처 등급은 관할 보건소나 복지로 사이트에서 확인 가능합니다.<br/>
-                ※ 서비스 가격 단위 : 천원 (예: 299 -> 299,000원)
+                ※ 서비스 가격 단위 : 천원 (예: 299 &rarr; 299,000원)
             </p>
         </div>
       </Section>
@@ -274,7 +274,7 @@ const Program: React.FC = () => {
                 </table>
             </div>
 
-            {/* 파트타임 - 최신 수정 완료 */}
+            {/* 파트타임 */}
             <div className="bg-white p-8 rounded-[32px] shadow-sm border border-gray-100 flex flex-col">
                 <div className="flex items-center gap-3 mb-6">
                     <div className="w-10 h-10 bg-[#66D2C2]/10 rounded-xl flex items-center justify-center">
@@ -364,7 +364,7 @@ const Program: React.FC = () => {
             </div>
         </div>
 
-        {/* 추가 요금 안내 - 표 형식으로 개편 */}
+        {/* 추가 요금 안내 - 표 형식 */}
         <div className="max-w-5xl mx-auto mb-16">
             <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-[#333333]">추가 요금 안내 (1일 기준)</h3>
