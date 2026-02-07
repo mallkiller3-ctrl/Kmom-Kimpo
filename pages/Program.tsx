@@ -514,7 +514,7 @@ const Program: React.FC = () => {
                     </div>
                 </div>
 
-                {/* 추가 요금표 (쌍둥이 항목 삭제됨) */}
+                {/* 추가 요금표 (수정 완료 확인용 강조) */}
                 <div className="lg:col-span-2 bg-white p-6 md:p-8 rounded-3xl shadow-xl border border-gray-100">
                     <div className="flex items-center gap-3 mb-6">
                         <AlertCircle className="text-orange-400 w-6 h-6" />
@@ -531,11 +531,11 @@ const Program: React.FC = () => {
                                 </tr>
                             </thead>
                             <tbody className="divide-y divide-gray-100 text-gray-600">
-                                <tr><td className="py-3 bg-gray-50/30 font-medium text-left px-4">큰아이 취학(36개월 이상)</td><td>5,000원</td><td>5,000원</td><td>5,000원</td></tr>
+                                <tr><td className="py-3 bg-gray-50/30 font-medium text-left px-4">큰아이 취학(36개월 이상)</td><td className="font-bold text-red-500">5,000원</td><td className="font-bold text-red-500">5,000원</td><td className="font-bold text-red-500">5,000원</td></tr>
                                 <tr><td className="py-3 bg-gray-50/30 font-medium text-left px-4">큰아이 미취학(36개월 미만)</td><td>8,000원</td><td>12,000원</td><td>3,000원</td></tr>
                                 <tr><td className="py-3 bg-gray-50/30 font-medium text-left px-4">미취학 (가정보육)</td><td>10,000원</td><td>15,000원</td><td>5,000원</td></tr>
-                                <tr><td className="py-3 bg-gray-50/30 font-medium text-left px-4">가족 1인 추가</td><td>5,000원</td><td>5,000원</td><td>5,000원</td></tr>
-                                <tr><td className="py-3 bg-gray-50/30 font-medium text-left px-4">남편 상주</td><td>5,000원</td><td>5,000원</td><td>5,000원</td></tr>
+                                <tr><td className="py-3 bg-gray-50/30 font-medium text-left px-4">가족 1인 추가</td><td className="font-bold text-red-500">5,000원</td><td className="font-bold text-red-500">5,000원</td><td className="font-bold text-red-500">5,000원</td></tr>
+                                <tr><td className="py-3 bg-gray-50/30 font-medium text-left px-4">남편 상주</td><td className="font-bold text-red-500">5,000원</td><td className="font-bold text-red-500">5,000원</td><td className="font-bold text-red-500">5,000원</td></tr>
                                 <tr><td className="py-3 bg-gray-50/30 font-medium text-left px-4">토,일요일 / 공휴일</td><td>160,000원</td><td>250,000원</td><td>-</td></tr>
                                 <tr><td className="py-3 bg-gray-50/30 font-medium text-left px-4">시간 연장 (시간당)</td><td>20,000원</td><td>20,000원</td><td>20,000원</td></tr>
                             </tbody>
@@ -627,7 +627,10 @@ const Program: React.FC = () => {
                              <p className="text-[12px] text-gray-400 italic">
                                 * 일반건의 경우 카드결제 및 현금영수증 발행은 예약금에 한해서만 가능함을 안내 드립니다.
                              </p>
-                             <Button onClick={handleConsultation} className="mt-8">상담 및 예약 신청하기</Button>
+                             <div className="flex flex-col items-center gap-4">
+                                <Button onClick={handleConsultation} className="mt-8">상담 및 예약 신청하기</Button>
+                                <span className="text-[10px] text-gray-300">K-MOM 2026 Ver 1.1 업데이트 완료</span>
+                             </div>
                         </div>
                     </div>
                 </div>
@@ -637,5 +640,3 @@ const Program: React.FC = () => {
     </div>
   );
 };
-
-export default Program;
