@@ -228,7 +228,7 @@ const Program: React.FC = () => {
             <Info className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
             <p className="text-xs text-blue-700 leading-relaxed">
                 ※ 위 가격은 2026년 보건복지부 고시 기준이며, 바우처 등급은 관할 보건소나 복지로 사이트에서 확인 가능합니다.<br/>
-                ※ 서비스 가격 단위 : 천원 (예: 299 &rarr; 299,000원)
+                ※ 서비스 가격 단위 : 천원 (예: 299 → 299,000원)
             </p>
         </div>
       </Section>
@@ -280,7 +280,7 @@ const Program: React.FC = () => {
                     <div className="w-10 h-10 bg-[#66D2C2]/10 rounded-xl flex items-center justify-center">
                         <Clock className="text-[#66D2C2] w-6 h-6" />
                     </div>
-                    <h3 className="text-xl font-bold text-[#333333]">파트타임 요금</h3>
+                    <h3 className="text-xl font-bold text-[#333333]">케이맘 파트타임 요금 평일 10일(2주)</h3>
                 </div>
                 <div className="space-y-4 mb-6">
                     <div className="bg-gray-50 p-4 rounded-2xl border border-gray-100">
