@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Section from '../components/Section';
 import Button from '../components/Button';
@@ -382,13 +381,13 @@ const Program: React.FC = () => {
                         </thead>
                         <tbody className="divide-y divide-gray-50 text-sm">
                             {[
-                                { label: '큰아이 취학 (36개월 이상)', commuter: '5,000원', livein: '5,000원', part: '5,000원' },
-                                { label: '큰아이 미취학 (36개월 미만)', commuter: '8,000원', livein: '12,000원', part: '3,000원' },
+                                { label: '큰아이 추가(등원)', commuter: '5,000원', livein: '8,000원', part: '3,000원' },
+                                { label: '큰아이 추가(미등원)', commuter: '8,000원', livein: '12,000원', part: '3,000원' },
                                 { label: '미취학 (가정보육)', commuter: '10,000원', livein: '15,000원', part: '5,000원' },
-                                { label: '가족 1인 추가', commuter: '5,000원', livein: '5,000원', part: '5,000원' },
-                                { label: '남편 상주', commuter: '5,000원', livein: '5,000원', part: '5,000원' },
+                                { label: '성인추가(재택근무, 상주)', commuter: '5,000원', livein: '8,000원', part: '3,000원' },
                                 { label: '토,일요일 / 공휴일', commuter: '160,000원', livein: '250,000원', part: '-' },
-                                { label: '시간 연장 (시간당)', commuter: '20,000원', livein: '20,000원', part: '20,000원' },
+                                { label: '시간 연장 (평일)', commuter: '15,000원', livein: '15,000원', part: '15,000원' },
+                                { label: '시간 연장 (주말)', commuter: '20,000원', livein: '20,000원', part: '20,000원' },
                             ].map((row, i) => (
                                 <tr key={i} className="hover:bg-gray-50/50">
                                     <td className="py-4 px-4 text-left font-bold text-gray-700">{row.label}</td>
